@@ -1,0 +1,45 @@
+html {
+}
+
+body {
+  min-height: 100vh;
+}
+.header {
+}
+
+.header-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.header.nav {
+  display: flex;
+  justify-content: center;
+}
+
+img.logo {
+}
+
+.header-color {
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+.body-pic-one {
+  max-width: 300px;
+}
+.body-pic-two {
+  max-width: 300px;
+}
+
+img.body-pic {
+  object-fit: contain;
+  max-width: 300px;
+}
+
+.body.text {
+  display: flex;
+  flex-direction: column;
+}

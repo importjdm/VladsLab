@@ -23,9 +23,29 @@ strong {
   flex-direction: column;
   align-items: center;
   max-height: 20%;
+  font-family: "Kanit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 
 .header-contact {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.header-email {
+  padding-right: 0.2rem;
+}
+
+.header-phone {
+  padding-right: 0.2rem;
+}
+.fa-ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
 }
 
 .header-nav {
@@ -36,8 +56,26 @@ strong {
   background-color: #ffd60a;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+}
 img.logo {
-  max-height: 50%;
+  max-height: 10rem;
+  border-radius: 50%;
+}
+
+.header-tabs-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+ul.header-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
 }
 
 .header-color {
@@ -69,6 +107,9 @@ img.logo {
 .body-pic-text-cont {
   display: flex;
   justify-content: space-between;
+  font-family: "Kanit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 
   width: 100%;
 }
@@ -88,7 +129,7 @@ img.logo {
 
 .body-text {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   max-width: 20%;
   flex-wrap: wrap;
@@ -96,6 +137,10 @@ img.logo {
   margin-left: 20px;
   font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
+}
+
+.body-sub-text {
+  display: flex;
 }
 
 .body-book-text {
@@ -111,15 +156,30 @@ img.logo {
   flex-direction: column;
 }
 
+.footer-color {
+  background-color: black;
+}
+
 .footer-links-pic-container {
   display: flex;
   justify-content: space-between;
+
+  background-color: #003566;
 }
 
 .footer-links-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  width: 50%;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links-contact {
+  list-style: none;
 }
 
 .footer-links-container-ii {
@@ -130,9 +190,10 @@ img.logo {
 
 .footer-pic-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 img.footer-pic {
-  max-height: 50%;
+  max-height: 10rem;
 }

@@ -4,7 +4,7 @@ html {
 body {
   display: grid;
   grid-template-columns: 10% 40% 40%10%;
-
+  background-color: #001d3d;
   min-height: 100vh;
 }
 
@@ -46,6 +46,7 @@ strong {
   display: flex;
   justify-content: space-between;
   margin-left: 0px;
+  color: #ffc300;
 }
 
 .header-nav {
@@ -64,7 +65,11 @@ img.logo {
   max-height: 10rem;
   border-radius: 50%;
 }
-
+.header-logo-text {
+  color: #000814;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
 .header-tabs-container {
   display: flex;
   align-items: center;
@@ -76,6 +81,7 @@ ul.header-tabs {
   width: 100%;
   justify-content: space-around;
   list-style: none;
+  color: #001d3d;
 }
 
 .header-color {
@@ -157,14 +163,15 @@ ul.header-tabs {
 }
 
 .footer-color {
-  background-color: black;
+  background-color: #001d3d;
 }
 
 .footer-links-pic-container {
   display: flex;
   justify-content: space-between;
-
-  background-color: #003566;
+  font-family: "Kanit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: #ffd60a;
 }
 
 .footer-links-container {
@@ -172,20 +179,30 @@ ul.header-tabs {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+  color: white;
+  font-size: large;
 }
 
 .footer-links {
   list-style: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .footer-links-contact {
   list-style: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .footer-links-container-ii {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.footer-logo-text {
+  color: white;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .footer-pic-container {

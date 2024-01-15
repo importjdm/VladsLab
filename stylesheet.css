@@ -199,7 +199,7 @@ button.body-book-text {
   font-size: x-large;
   color: #ffc300;
   border-radius: 9px;
-  /* position: relative;
+  /*position: relative;
   top: 60px; */
   padding: 10px;
 }
@@ -208,7 +208,8 @@ button.body-book-text:hover {
   color: white;
   background-color: #ffc300;
   transition: 0.5s;
-  top: 55px;
+  position: relative;
+  bottom: 5px;
   box-shadow: 5px 5px 5px black;
 }
 

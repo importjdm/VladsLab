@@ -83,6 +83,42 @@ ul.header-tabs {
   list-style: none;
   color: #001d3d;
 }
+/*drop down container */
+.header-button-contain {
+  /*float: left;
+  overflow: hidden; */
+}
+/* Links inside navbar */
+
+/*dropdown container & button */
+.header-button-contain .header-services-button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*dropdown content (hidden by default) */
+.header-services-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #001d3d;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.header-button-contain:hover .header-services-dropdown {
+  display: block;
+}
+
+/* links inside dropdown */
+.header-services-dropdown a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
 .header-color {
   grid-column: 2 / 4;
@@ -195,10 +231,12 @@ p.body-results-text {
 button.body-book-text {
   font-size: x-large;
   color: #ffc300;
-  border-radius: 9px;
+  border-radius: 7px;
   /*position: relative;
   top: 60px; */
-  padding: 10px;
+  padding: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 button.body-book-text:hover {

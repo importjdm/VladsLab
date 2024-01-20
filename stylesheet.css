@@ -1,6 +1,3 @@
-html {
-}
-
 body {
   display: grid;
   grid-template-columns: 10% 40% 40%10%;
@@ -105,7 +102,6 @@ ul.header-tabs {
 }
 
 .body-pic-one {
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .body-testing-pic-cont {
@@ -125,7 +121,6 @@ img.body-testing-pic {
 }
 
 .body-pic-two {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
 }
 
 .body-pic-text-cont {
@@ -140,7 +135,8 @@ img.body-testing-pic {
 }
 
 .body-pic {
-  max-width: 300px;
+  max-width: 16vw;
+  border-radius: 10px;
 }
 
 .body-main-text {
@@ -154,6 +150,7 @@ img.body-testing-pic {
 
 p.body-results-text {
   text-align: center;
+  color: #ffd60a;
 }
 
 .body-text {
@@ -296,6 +293,12 @@ p.footer-sub-text {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.footer-contact-heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 .footer-links-contact {
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
@@ -314,9 +317,17 @@ p.footer-sub-text {
 }
 
 .footer-pic-container {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer-logo-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 50%;
+  align-items: flex-end;
 }
 
 img.footer-pic {

@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 10% 40% 40%10%;
-  background-color: #001d3d;
+  background-color: #eaf4f4;
 
   min-height: 100vh;
 }
@@ -17,17 +17,19 @@ strong {
   font-style: italic;
 }
 .header {
-  grid-column: 2 / 4;
-  /*display: flex; */
-  flex-direction: column;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 15% 85%;
   align-items: center;
-  max-height: 20%;
   font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
 }
 
 .header-contact {
+  grid-column: 2 / 4;
+  grid-row: 1;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -54,12 +56,14 @@ a.header-email-link {
 }
 
 .header-nav {
+  grid-column: 2 /4;
+  grid-row: 2;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*background-color: #ffd60a; */
-  background-image: url(/images/stacked-peaks-haikei-header.svg);
+  background-color: #eaf4f4;
+  /*background-image: url(/images/stacked-peaks-haikei-header.svg); */
 }
 
 .header-logo {
@@ -153,20 +157,22 @@ i.fa-caret-down {
 }
 
 .header-color {
-  grid-column: 2 / 4;
+  grid-column: 1 / 5;
   display: flex;
   height: 50px;
   width: 100%;
-  background-color: #001d3d;
+  background-color: #f6fff8;
 }
 
 .body {
-  grid-column: 2 / 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 100%;
 
-  background-image: url(/images/stacked-peaks-haikei-two.svg);
+  background-color: #a4c3b2;
+
+  /*background-image: url(/images/stacked-peaks-haikei-two.svg);*/
 }
 
 .body-pic-one {
@@ -187,6 +193,7 @@ img.body-testing-pic {
 }
 
 .body-pic-text-cont {
+  grid-column: 2 / 4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,14 +279,15 @@ button.body-book-text:hover {
 }
 
 .footer {
-  grid-column: 2 / 4;
-  display: flex;
-  flex-direction: column;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
 }
 
 .footer-top-cont {
+  grid-column: 2 / 4;
   display: flex;
-  background: whitesmoke;
+  background: #eaf4f4;
   font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
 }
@@ -332,18 +340,21 @@ p.footer-sub-text {
 }
 
 .footer-links-pic-container {
-  display: flex;
-  justify-content: space-between;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
   font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
-  background-image: url(/images/stacked-peaks-haikei-header.svg);
+  /*background-image: url(/images/stacked-peaks-haikei-header.svg); */
+  background-color: #a4c3b2;
 }
 
 .footer-links-container {
+  grid-column: 2 / 4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+
   color: white;
   font-size: large;
 }
@@ -462,8 +473,21 @@ img.footer-pic {
   display: flex;
   justify-content: center;
   width: 50%;
+
+  filter: drop-shadow(15px 2px #ffd60a);
 }
 
 .body-service-picture {
-  max-width: 65%;
+  max-width: 63%;
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
 }

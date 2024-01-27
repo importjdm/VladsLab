@@ -18,7 +18,7 @@ strong {
 }
 .header {
   grid-column: 2 / 4;
-  display: flex;
+  /*display: flex; */
   flex-direction: column;
   align-items: center;
   max-height: 20%;
@@ -392,4 +392,78 @@ p.footer-sub-text {
 
 img.footer-pic {
   max-height: 10rem;
+}
+
+/************** Services styling ******************/
+/*body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+*/
+
+/* Template layout ***************************/
+.services-container {
+  max-width: 44%;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.service-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.service-title {
+  font-size: 36px;
+  color: #333;
+}
+.service-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.feature-list {
+  margin-bottom: 30px;
+}
+.feature-list h3 {
+  color: #333;
+}
+.feature-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.feature-list li {
+  margin-bottom: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #45a049;
+}
+
+/************Body Layout ************************/
+.body-services {
+  grid-column: 2 / 4;
+  display: flex;
+  align-items: center;
+
+  background-image: url(/images/stacked-peaks-haikei-two.svg);
+}
+
+.body-services-picture-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.body-service-picture {
+  max-width: 65%;
 }

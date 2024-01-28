@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-columns: 10% 40% 40%10%;
   background-color: #eaf4f4;
-
+  margin: 0px;
   min-height: 100vh;
 }
 
@@ -22,6 +22,8 @@ p {
   font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .header-contact {
@@ -30,6 +32,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: start;
+  border-bottom: solid 2px #cce3de;
 }
 
 .header-email {
@@ -60,6 +63,7 @@ a.header-email-link {
   flex-direction: row;
   justify-content: space-between;
   background-color: #eaf4f4;
+  margin-top: 15px;
   /*background-image: url(/images/stacked-peaks-haikei-header.svg); */
 }
 
@@ -308,12 +312,14 @@ button.body-book-text:hover {
 .body-half-color-p1 {
   font-size: xxx-large;
   color: #1e1f1e;
+  margin-bottom: 20px;
 }
 
 .body-half-color-p2 {
   font-size: x-large;
   font-style: italic;
   color: #202221;
+  margin-bottom: 35px;
 }
 
 .book-now-btn {
@@ -335,10 +341,12 @@ button.body-book-text:hover {
   width: 50%;
   display: flex;
   justify-content: end;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .body-half-image {
-  max-width: 70%;
+  max-width: 65%;
   border-radius: 10px;
 }
 
@@ -347,6 +355,8 @@ button.body-book-text:hover {
   grid-column: 1 / 5;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-top-cont {
@@ -377,7 +387,7 @@ h1.footer-header-two {
 
 .footer-image-one {
   border-right: 2px solid transparent;
-  box-shadow: 3px 0px 4px 0px #d0d4db;
+  box-shadow: -3px 0px 4px 0px #d0d4db, 3px 0px 4px 0px #d0d4db;
 }
 
 .footer-image-two {
@@ -386,6 +396,10 @@ h1.footer-header-two {
 }
 
 .footer-image-three {
+  border-right: 2px solid transparent;
+  box-shadow: 3px 0px 4px 0px #d0d4db;
+}
+.footer-image-four {
   border-right: 2px solid transparent;
   box-shadow: 3px 0px 4px 0px #d0d4db;
 }
@@ -417,27 +431,27 @@ p.footer-sub-text {
 .footer-links-container {
   grid-column: 2 / 4;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   color: white;
   font-size: large;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
 }
 
 .footer-links {
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
+  padding: 0px;
 }
 
-.footer-contact-heading {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+li.footer-links-li {
+  margin-bottom: 7px;
 }
+
 .footer-links-contact {
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
+  padding: 0px;
 }
 
 .footer-links-container-ii {
@@ -453,21 +467,20 @@ p.footer-sub-text {
 }
 
 .footer-pic-container {
-  width: 50%;
+  max-width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer-logo-container {
   display: flex;
-  flex-direction: column;
   width: 50%;
-  align-items: flex-end;
 }
 
 img.footer-pic {
   max-height: 10rem;
+  border-radius: 10px;
 }
 
 /************** Services styling ******************/

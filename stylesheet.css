@@ -3,7 +3,14 @@ body {
   grid-template-columns: 10% 40% 40%10%;
   background-color: #eaf4f4;
   margin: 0px;
-  min-height: 100vh;
+  /*min-width: 100vh; */
+}
+@media screen and (min-width: 300px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
 }
 
 p {
@@ -24,12 +31,22 @@ p {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-size: x-large;
+}
+
+@media screen and (min-width: 300px) {
+  .header {
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header-contact {
   grid-column: 2 / 4;
   grid-row: 1;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: start;
   border-bottom: solid 2px #cce3de;
@@ -43,11 +60,18 @@ p {
   padding-right: 0.2rem;
 }
 ul.fa-ul {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin-left: 0px;
   color: #ffc300;
+  gap: 10px;
+}
+
+@media screen and (min-width: 300px) {
+  ul.fa-ul {
+    flex-direction: column;
+  }
 }
 
 a.header-email-link {
@@ -58,7 +82,7 @@ a.header-email-link {
 .header-nav {
   grid-column: 2 /4;
   grid-row: 2;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,14 +91,32 @@ a.header-email-link {
   /*background-image: url(/images/stacked-peaks-haikei-header.svg); */
 }
 
+@media screen and (min-width: 300px) {
+  .header-nav {
+    flex-direction: column;
+  }
+}
+
 .header-logo {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 300px) {
+  .header-logo {
+    justify-content: center;
+  }
 }
 img.logo {
   max-height: 10rem;
   border-radius: 50%;
 }
+@media screen and (min-width: 300px) {
+  img.logo {
+    max-height: 6rem;
+  }
+}
+
 .header-logo-text {
   color: #000814;
   font-family: "Josefin Sans", sans-serif;
@@ -83,15 +125,27 @@ img.logo {
 .header-tabs-container {
   display: flex;
   align-items: center;
-  width: 50%;
+  max-width: 50%;
+}
+
+@media screen and (min-width: 300px) {
+  .header-tabs-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 ul.header-tabs {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-around;
   list-style: none;
   color: #001d3d;
+}
+@media screen and (min-width: 300px) {
+  ul.header-tabs {
+    gap: 15px;
+  }
 }
 
 /*dropdown container & button */
@@ -101,7 +155,7 @@ ul.header-tabs {
   font-family: inherit;
   margin: 0;
   overflow: hidden;
-  width: 25%;
+  max-width: 25%;
 }
 
 .header-services-button {
@@ -135,7 +189,7 @@ i.fa-caret-down {
   position: absolute;
   content: "";
   bottom: 100%;
-  width: 100%;
+  max-width: 100%;
   height: 20px;
   background-color: transparent;
 }
@@ -161,125 +215,9 @@ i.fa-caret-down {
   grid-column: 1 / 5;
   display: flex;
   height: 50px;
-  width: 100%;
+  max-width: 100%;
   background-color: #f6fff8;
 }
-
-/*.body {
-  grid-column: 1 / 5;
-  display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 100%;
-
-  background-color: #a4c3b2;
-
-  /*background-image: url(/images/stacked-peaks-haikei-two.svg);
-}
-
-.body-pic-one {
-}
-
-.body-testing-pic-cont {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-img.body-testing-pic {
-  max-width: 50%;
-  border-radius: 10px;
-}
-
-.body-pic-two {
-}
-
-.body-pic-text-cont {
-  grid-column: 2 / 4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Kanit", sans-serif;
-  font-family: "Rubik", sans-serif;
-
-  height: 100%;
-  width: 100%;
-}
-
-.body-pic {
-  max-width: 16vw;
-  border-radius: 10px;
-}
-
-.body-main-text {
-  display: flex;
-  height: 100%;
-  max-width: 20%;
-  flex-wrap: wrap;
-  font-size: 3.5vh;
-  margin-left: 20px;
-}
-
-p.body-results-text {
-  text-align: center;
-  color: #ffd60a;
-}
-
-.body-text {
-  display: flex;
-
-  justify-content: center;
-  max-width: 20%;
-  height: 100%;
-  flex-wrap: wrap;
-  font-size: 3.5vh;
-  margin-left: 20px;
-  font-family: "Kanit", sans-serif;
-  font-family: "Rubik", sans-serif;
-}
-
-.body-text-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.body-sub-text {
-  display: flex;
-}
-
-.body-testing-descrip {
-  color: #ffc300;
-  font-size: 3.5vh;
-  line-height: 35px;
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  font-family: "Rubik", sans-serif;
-}
-
-.body-testing-pic-cont-two {
-  display: flex;
-  justify-content: center;
-}
-button.body-book-text {
-  font-size: x-large;
-  color: #ffc300;
-  border-radius: 7px;
-  padding: 12px;
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-button.body-book-text:hover {
-  color: white;
-  background-color: #ffc300;
-  transition: 0.5s;
-  position: relative;
-  bottom: 5px;
-  box-shadow: 5px 5px 5px black;
-}
-
-*/
 
 /***********Body Section **************/
 .body {
@@ -313,6 +251,12 @@ button.body-book-text:hover {
   font-size: xxx-large;
   color: #1e1f1e;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 300px) {
+  .body-half-color-p1 {
+    font-size: xx-large;
+  }
 }
 
 .body-half-color-p2 {
@@ -349,7 +293,11 @@ button.body-book-text:hover {
   max-width: 65%;
   border-radius: 10px;
 }
-
+@media screen and (min-width: 300px) {
+  .body-half-image {
+    max-width: 100%;
+  }
+}
 /*******Footer Section *********/
 .footer {
   grid-column: 1 / 5;

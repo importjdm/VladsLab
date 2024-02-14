@@ -50,6 +50,7 @@ p {
   display: flex;
   justify-content: start;
   border-bottom: solid 2px #cce3de;
+  font-size: large;
 }
 
 /*****Mobile screen size*****/
@@ -58,6 +59,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: medium;
   }
 }
 
@@ -152,7 +154,7 @@ img.logo {
 .header-tabs-container {
   display: flex;
   align-items: center;
-  max-width: 50%;
+  max-width: 75%;
 }
 
 /*****Mobile screen size*****/
@@ -179,6 +181,7 @@ ul.header-tabs {
   display: flex;
   font-size: large;
   gap: 15px;
+  margin-right: 15px;
 }
 
 /*****Mobile screen size*****/
@@ -405,41 +408,47 @@ h1.footer-header-two {
   }
 }
 
-.fa-border {
+/***footer icons ***/
+i.fa-border {
   border: solid;
   border-radius: 10px;
   color: black;
   margin-left: 10px;
 }
 
+/***color of footer icons ***/
 .fa-primary-color {
   color: #001d3d;
 }
 
+/****Secondary color of footer icons***/
 .fa-secondary-color {
   background: #ffd60a;
 }
 
+/****heart icon footer ****/
 .footer-image-one {
   border-right: 2px solid transparent;
   box-shadow: -3px 0px 4px 0px #d0d4db, 3px 0px 4px 0px #d0d4db;
 }
 
+/****Pills icon footer *****/
 .footer-image-two {
   border-right: 2px solid transparent;
   box-shadow: 3px 0px 4px 0px #d0d4db;
 }
 
+/*****thumbs up icon footer *****/
 .footer-image-three {
   border-right: 2px solid transparent;
   box-shadow: 3px 0px 4px 0px #d0d4db;
 }
-
+/*****Beaker icon footer ********/
 .footer-image-four {
   border-right: 2px solid transparent;
   box-shadow: 3px 0px 4px 0px #d0d4db;
 }
-
+/****Title w/ icon footer *****/
 .footer-image-text-title {
   display: flex;
   justify-content: center;
@@ -458,7 +467,7 @@ h1.footer-header-two {
     justify-content: right;
   }
 }
-
+/****icon subtext footer ****/
 p.footer-sub-text {
   text-align: center;
 }
@@ -480,12 +489,6 @@ p.footer-sub-text {
   background-color: #a4c3b2;
 }
 
-/*@media screen and (min-width: 300px) {
-  .footer-links-pic-container {
-    display: flex;
-    flex-direction: column;
-  }
-}*/
 /*****footer container of nav and contacts  ****/
 .footer-links-container {
   grid-column: 2 / 4;
@@ -497,7 +500,7 @@ p.footer-sub-text {
   justify-content: space-between;
 }
 /*****Mobile screen size*****/
-@media screen and ((min-width: 300px) and (max-width: 500px)) {
+@media screen and ((min-width: 300px) and (max-width: 1024px)) {
   .footer-links-container {
     flex-direction: column;
   }

@@ -94,8 +94,10 @@ ul.fa-ul {
   }
 }
 
-a.header-email-link {
-  color: #ffc300;
+
+/*****ALL anchor tags *********/
+a {
+  color: #161614;
   text-decoration: none;
 }
 
@@ -564,16 +566,6 @@ img.footer-pic {
   border-radius: 10px;
 }
 
-/************** Services styling ******************/
-/*body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f4f6;
-  color: #333;
-}
-*/
-
 /************Body Layout ************************/
 .body-services {
   grid-column: 1 / 5;
@@ -583,17 +575,19 @@ img.footer-pic {
   grid-template-rows: 1fr;
 }
 
+/******Container of everything in body of services pages *****/
 .body-content-container {
   grid-column: 2 / 4;
   display: flex;
 }
 /*****Mobile screen size****************/
-@media screen and ((min-width: 300px) and (max-width: 768px)) {
+@media screen and ((min-width: 300px) and (max-width: 1250px)) {
   .body-content-container {
     flex-wrap: wrap;
   }
 }
 
+/******Text section in body of services page *****/
 .services-container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -636,13 +630,17 @@ img.footer-pic {
   background-color: #45a049;
 }
 
+/********** container of body in services pages ******/
 .body-services-picture-container {
   display: flex;
   justify-content: end;
-  max-width: 50%;
+  max-width: 98%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-@media screen and ((min-width: 300px) and (max-width: 768px)) {
+/***Mobile & Tablet screen size ******/
+@media screen and ((min-width: 300px) and (max-width: 1250px)) {
   .body-services-picture-container {
     max-width: 100%;
     justify-content: start;
@@ -650,7 +648,24 @@ img.footer-pic {
   }
 }
 
+/***large screen size ******/
+@media screen and ((min-width: 1251px) and (max-width: 1440px)) {
+  .body-services-picture-container {
+    max-width: 100%;
+    justify-content: end;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+/***Picture in body of services ***/
 .body-service-picture {
   max-width: 63%;
   border-radius: 10px;
+}
+
+/***large screens ********/
+@media screen and ((min-width: 1251px) and (max-width: 1440px)) {
+  .body-service-picture {
+    max-width: 90%;
+  }
 }

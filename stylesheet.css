@@ -83,7 +83,7 @@ ul.fa-ul {
   display: flex;
   justify-content: space-between;
   margin-left: 0px;
-  color: #ffc300;
+  color: #6b9080;
   gap: 10px;
 }
 
@@ -94,10 +94,13 @@ ul.fa-ul {
   }
 }
 
-
 /*****ALL anchor tags *********/
 a {
-  color: #161614;
+  color: black;
+  text-decoration: none;
+}
+a.header-email-link {
+  color: #6b9080;
   text-decoration: none;
 }
 
@@ -509,9 +512,14 @@ p.footer-sub-text {
 }
 
 .footer-links {
+  margin-top: 0px;
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
   padding: 0px;
+}
+
+a.footer-links {
+  color: white;
 }
 
 li.footer-hours-list {
@@ -667,5 +675,106 @@ img.footer-pic {
 @media screen and ((min-width: 1251px) and (max-width: 1440px)) {
   .body-service-picture {
     max-width: 90%;
+  }
+}
+
+/*******Conctact page *********/
+
+/*style for contact information section ******/
+
+.contact-content-container {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  background-color: #cce3de;
+}
+
+@media screen and ((min-width: 300px) and (max-width: 1250px)) {
+  .contact-content-container {
+    flex-wrap: wrap;
+  }
+}
+
+.contact-info {
+  grid-column: 2 /4;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Style for links */
+a.contact-page {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/******Contact page styling *******/
+/* Style for appointment notice */
+
+h2.contact-heading {
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+.appointment {
+  font-size: calc(1vw + 1vh);
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media screen and ((min-width: 300px) and (max-width: 768px)) {
+  .appointment {
+    font-size: calc(1.5vw + 1.5vh);
+  }
+}
+
+/******Styling for About us page ********/
+
+.about-content-container {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  background-color: #cce3de;
+}
+
+@media screen and ((min-width: 300px) and (max-width: 1250px)) {
+  .contact-content-container {
+    flex-wrap: wrap;
+  }
+}
+
+.about-us {
+  grid-column: 2 /4;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+h2.about-heading {
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+.about {
+  font-size: calc(1vw + 1vh);
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+p.subTextOne {
+  margin-bottom: 20px;
+}
+
+@media screen and ((min-width: 300px) and (max-width: 768px)) {
+  .about {
+    font-size: calc(1.5vw + 1.5vh);
   }
 }
